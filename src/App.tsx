@@ -1,5 +1,4 @@
 import {Fragment} from "react"
-import './App.css'
 import {Route, Routes} from "react-router-dom"
 import MainPage from "./Pages/MainPage"
 import Navigation from "./Components/Navigation"

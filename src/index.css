@@ -20,7 +20,7 @@ header::before {
     width: 700px;
     height: 300px;
     left: 40%;
-    top: 40%;
+    top: 30%;
     background: #ffc1ff;
     filter: blur(90px);
 }
@@ -46,7 +46,7 @@ section::before {
     height: 300px;
     transform: rotate(30deg);
     left: 70%;
-    top: 150%;
+    top: 120%;
     background: #ffc1ff;
     filter: blur(90px);
 }
@@ -57,8 +57,8 @@ section::after {
     width: 200px;
     height: 400px;
     transform: rotate(90deg);
-    left: 80%;
-    top: 130%;
+    left: 60%;
+    top: 120%;
     background: #c1eeff;
     filter: blur(90px);
 }
