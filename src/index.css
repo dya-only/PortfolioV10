@@ -62,3 +62,71 @@ section::after {
     background: #c1eeff;
     filter: blur(90px);
 }
+
+#menu-on {
+    animation: On;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+#menu-off {
+    animation: Off;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+#text-on {
+    animation: textOn;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+#text-off {
+    animation: textOff;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes On {
+    from {
+        transform: scale(1, 1);
+        width: 50px;
+    }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+    to {
+        transform: scale(1, 1);
+        width: 180px;
+    }
+}
+@keyframes Off {
+    from {
+        transform: scale(1, 1);
+        width: 180px;
+    }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+    to {
+        transform: scale(1, 1);
+        width: 50px;
+    }
+}
+@keyframes textOn {
+    from {
+        font-size: 0;
+        opacity: 0;
+    }
+    to {
+        font-size: 16px;
+        opacity: 1;
+    }
+}
+@keyframes textOff {
+    from {
+        font-size: 16px;
+        opacity: 1;
+    }
+    to {
+        font-size: 0;
+        opacity: 0;
+    }
+}
