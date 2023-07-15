@@ -89,9 +89,9 @@ section::after {
         transform: scale(1, 1);
         width: 50px;
     }
-    25% { transform: scale(0.9, 1.1); }
-    50% { transform: scale(1.1, 0.9); }
-    75% { transform: scale(0.95, 1.05); }
+    25% { transform: scale(0.8, 1); }
+    50% { transform: scale(1.2, 1); }
+    75% { transform: scale(0.9, 1); }
     to {
         transform: scale(1, 1);
         width: 180px;
@@ -102,9 +102,9 @@ section::after {
         transform: scale(1, 1);
         width: 180px;
     }
-    25% { transform: scale(0.9, 1.1); }
-    50% { transform: scale(1.1, 0.9); }
-    75% { transform: scale(0.95, 1.05); }
+    25% { transform: scale(0.9, 1); }
+    50% { transform: scale(1.1, 1); }
+    75% { transform: scale(0.95, 1); }
     to {
         transform: scale(1, 1);
         width: 50px;
