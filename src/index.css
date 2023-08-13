@@ -14,18 +14,22 @@ html, body {
 }
 
 header::before {
+    opacity: 90%;
     z-index: -10;
     content: "";
     position: absolute;
-    width: 700px;
+    width: 600px;
     height: 300px;
+    transform: rotate(-10deg);
     left: 40%;
     top: 30%;
     background: #ffc1ff;
     filter: blur(90px);
+    border-radius: 50%;
 }
 
 header::after {
+    opacity: 90%;
     z-index: -10;
     content: "";
     position: absolute;
@@ -36,9 +40,11 @@ header::after {
     top: 20%;
     background: #c1eeff;
     filter: blur(90px);
+    border-radius: 20%;
 }
 
 section::before {
+    opacity: 90%;
     z-index: -10;
     content: "";
     position: absolute;
@@ -46,11 +52,13 @@ section::before {
     height: 300px;
     transform: rotate(30deg);
     left: 70%;
-    top: 120%;
+    top: 100%;
     background: #ffc1ff;
     filter: blur(90px);
+    border-radius: 100%;
 }
 section::after {
+    opacity: 90%;
     z-index: -10;
     content: "";
     position: absolute;
@@ -58,9 +66,10 @@ section::after {
     height: 400px;
     transform: rotate(90deg);
     left: 60%;
-    top: 120%;
+    top: 100%;
     background: #c1eeff;
     filter: blur(90px);
+    border-radius: 100%;
 }
 
 #menu-on {
