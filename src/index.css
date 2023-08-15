@@ -51,7 +51,7 @@ section::before {
     width: 400px;
     height: 300px;
     transform: rotate(30deg);
-    left: 70%;
+    left: 20%;
     top: 100%;
     background: #ffc1ff;
     filter: blur(90px);
@@ -62,11 +62,11 @@ section::after {
     z-index: -10;
     content: "";
     position: absolute;
-    width: 200px;
-    height: 400px;
+    width: 500px;
+    height: 800px;
     transform: rotate(90deg);
-    left: 60%;
-    top: 100%;
+    left: -10%;
+    top: 80%;
     background: #c1eeff;
     filter: blur(90px);
     border-radius: 100%;
