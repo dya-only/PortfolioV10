@@ -9,7 +9,7 @@ import GitUsr from '../assets/imgs/gitusr.png'
 import EntryStory from '../assets/imgs/entry.png'
 import Star from '../assets/imgs/star.png'
 import Goorm from '../assets/imgs/goorm.jpg'
-import Appjam from '../assets/imgs/appjam1.png'
+import Appjam from '../assets/imgs/appjam.jpg'
 
 function MainPage() {
   return (
@@ -17,8 +17,8 @@ function MainPage() {
       <Header />
 
       {/* Portfolio */}
-      <section className='w-screen h-[85vh] flex xs:justify-center lg:justify-center md:justify-center sm:justify-start items-start xs:ml-0 lg:ml-0 md:ml-0 sm:ml-4'>
-        <img id='bg' className='w-screen h-[95%] object-cover absolute opacity-20 z-10' src={Grid} alt=""/>
+      <section className='w-screen min-h-[850px] flex xs:justify-center lg:justify-center md:justify-center sm:justify-start items-start xs:ml-0 lg:ml-0 md:ml-0 sm:ml-8'>
+        <img id='bg' className='absolute w-screen h-[800px] object-cover opacity-20 z-10' src={Grid} alt=""/>
 
         <div className='w-[80%] flex flex-col justify-start items-start'>
           <div className="flex flex-col items-start w-[620px] mb-8">
@@ -35,7 +35,7 @@ function MainPage() {
             <Card  title={'EntryStory'} content={'엔트리 커뮤니티인 \'엔트리 이야기\'의 클론 웹사이트입니다.'} link={'https://github.com/dya-only/EntryStory'} img={EntryStory} stack={['https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg']} />
             <Card  title={'Star'} content={'현재 위치 주변의 카페들의 위치와 정보, 영업 여부를 보여줍니다.'} link={'https://github.com/dya-only/Gitusr'} img={Star} stack={['https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg']} />
 
-            <Link className='z-20 mt-28 w-12 h-12 bg-white drop-shadow-xl rounded-full flex justify-center items-center hover:-translate-y-2 transition duration-300' to={'/portfolio'}>
+            <Link className='z-20 xs:mt-28 lg:mt-28 md:mt-28 sm:mt-10 w-12 h-12 bg-white drop-shadow-xl rounded-full flex justify-center items-center hover:-translate-y-2 transition duration-300' to={'/portfolio'}>
               <div className='w-[5px] h-[5px] rounded-full bg-blue-500 mr-[2px] ml-[2px]'/>
               <div className='w-[5px] h-[5px] rounded-full bg-blue-500 mr-[2px] ml-[2px]'/>
               <div className='w-[5px] h-[5px] rounded-full bg-blue-500 mr-[2px] ml-[2px]'/>
@@ -47,8 +47,8 @@ function MainPage() {
       </section>
 
       {/* Awards */}
-      <section className='w-screen h-screen flex xs:justify-center lg:justify-center md:justify-center sm:justify-start items-start xs:ml-0 lg:ml-0 md:ml-0 sm:ml-4'>
-        <img id='bg' className='w-screen h-[95%] object-cover absolute opacity-20 z-10' src={Grid} alt=""/>
+      <section className='w-screen min-h-[100vh] flex xs:justify-center lg:justify-center md:justify-center sm:justify-start items-start xs:ml-0 lg:ml-0 md:ml-0 sm:ml-8'>
+        <img id='bg' className='absolute w-screen h-[800px] object-cover opacity-20 z-10' src={Grid} alt=""/>
 
         <div className='w-[80%] flex flex-col justify-start items-start'>
           <div className="flex flex-col items-start w-[620px] mb-8">
@@ -62,6 +62,7 @@ function MainPage() {
 
           <div className='flex flex-col justify-start items-start'>
             <Award title={'Goorm High School Algorithm Challange'} img={Goorm} prize={'1st'} />
+            <Award title={'2023 AppJam Hackaton'} img={Appjam} prize={'2nd'} />
           </div>
         </div>
 
