@@ -121,6 +121,15 @@ section::after {
     }
 }
 
+@keyframes sizeRightNameM {
+    from {
+        width: 0;
+    }
+    to {
+        width: 270px;
+    }
+}
+
 @keyframes On {
     from {
         transform: scale(1, 1);
@@ -165,5 +174,29 @@ section::after {
     to {
         font-size: 0;
         opacity: 0;
+    }
+}
+
+
+@media (300px <= width <= 700px) {
+    #title {
+        margin-left: 25px;
+        width: 500px;
+        font-size: 50px;
+    }
+
+    #name {
+        margin-left: 25px;
+        width: 500px;
+        font-size: 20px;
+        animation: sizeRightNameM;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    #pfSection {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 25px;
     }
 }

@@ -1,7 +1,7 @@
 import {Fragment} from "react"
 import {Route, Routes} from "react-router-dom"
-import MainPage from "./Pages/MainPage"
-import Navigation from "./Components/Navigation"
+import MainPage from "./pages/MainPage"
+import Navigation from "./components/Navigation"
 
 function App() {
     return (
