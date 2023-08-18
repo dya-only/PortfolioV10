@@ -93,6 +93,34 @@ section::after {
     animation-fill-mode: forwards;
 }
 
+#name {
+    animation: sizeRightName;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#title {
+    animation: sizeTitle;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sizeTitle {
+    from {
+    }
+    to {
+    }
+}
+
+@keyframes sizeRightName {
+    from {
+        width: 0;
+    }
+    to {
+        width: 718px;
+    }
+}
+
 @keyframes On {
     from {
         transform: scale(1, 1);
