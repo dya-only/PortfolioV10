@@ -178,7 +178,7 @@ section::after {
 }
 
 
-@media (300px <= width <= 700px) {
+@media (300px <= width <= 1000px) {
     #title {
         margin-left: 25px;
         width: 500px;
@@ -198,5 +198,30 @@ section::after {
         display: flex;
         justify-content: flex-start;
         margin-left: 25px;
+    }
+
+    #awards {
+        margin-left: -12px;
+        margin-top: 200px;
+    }
+
+    #award1 {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    #awardIMG {
+        width: 330px;
+        height: 220px;
+    }
+    #awardTitle {
+        width: 320px;
+        font-size: 25px;
+    }
+
+    #award2 {
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
     }
 }

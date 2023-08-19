@@ -8,7 +8,7 @@ function Card (props: { link: string, title: string, content: string, img: strin
           <span className='w-1 h-5 bg-blue-500 mr-2 rounded-full' />
           <div className='font-[600] text-[25px] text-gray-800 mr-2'>{ props.title }</div>
         </div>
-        <div className='p-1 rounded-xl drop-shadow-lg flex justify-center items-center bg-white/70 backdrop-blur-xl'>{ props.stack.map((el, idx) => <img className='w-5 ml-1 mr-1' src={el} alt={''} /> )}</div>
+        <div className='p-1 rounded-xl drop-shadow-lg flex justify-center items-center bg-white/70 backdrop-blur-xl'>{ props.stack.map((el, idx) => <img key={idx} className='w-5 ml-1 mr-1' src={el} alt={''} /> )}</div>
       </div>
       <div className='font-[400] text-[18px] w-80 text-gray-500'>{ props.content }</div>
     </a>
