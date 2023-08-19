@@ -1,9 +1,9 @@
 import {Fragment} from "react"
-import Header from "../components/Header"
+import Header from "../Components/Header"
 import {Link} from "react-router-dom"
-import Card from "../components/Card"
-import Award from "../components/Award"
-import Grid from '../components/Grid'
+import Card from "../Components/Card"
+import Award from "../Components/Award"
+import Grid from '../Components/Grid'
 
 import GitUsr from '../assets/imgs/gitusr.png'
 import EntryStory from '../assets/imgs/entry.png'
