@@ -11,6 +11,7 @@ import Star from '../assets/imgs/star.png'
 import Goorm from '../assets/imgs/goorm.jpg'
 import Appjam from '../assets/imgs/appjam.jpg'
 import Ict from '../assets/imgs/ict.jpeg'
+import SWAI from '../assets/imgs/sw-ai.jpeg'
 
 function MainPage() {
   return (
@@ -65,10 +66,11 @@ function MainPage() {
             </div>
           </div>
         </div>
-        <div className='w-full flex flex-col justify-start items-center'>
+        <div className='w-[80%] flex flex-col justify-start items-start'>
           <Award title={'2023 구름 하이스쿨 알고리즘 챌린지'} img={Goorm} prize={'대상'} type={2} dir={0} />
           <Award title={'2023 ICT 장애인 보조공학기기 공모전'} img={Ict} prize={'최우수'} type={3} dir={0} />
           <Award title={'2023 앱잼 해커톤 (미래산업부문)'} img={Appjam} prize={'우수'} type={2} dir={0} />
+          <Award title={'2023 제 5회 SW-AI교육 창의융합 해커톤'} img={SWAI} prize={'창의융합상(1위)'} type={4} dir={0} />
         </div>
 
         <div></div>

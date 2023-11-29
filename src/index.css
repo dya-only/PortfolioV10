@@ -1,227 +1,239 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;900&family=Prompt:wght@900&display=swap');
 @font-face {
-    font-family: Onest;
-    src: url("/public/fonts/Onest.ttf") format('ttf');
+  font-family: Onest;
+  src: url('/public/fonts/Onest.ttf') format('ttf');
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    margin: 0;
-    overflow-x: hidden;
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
 
 header::before {
-    opacity: 90%;
-    z-index: -10;
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 300px;
-    transform: rotate(-10deg);
-    left: 40%;
-    top: 30%;
-    background: #ffc1ff;
-    filter: blur(90px);
-    border-radius: 50%;
+  opacity: 90%;
+  z-index: -10;
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  transform: rotate(-10deg);
+  left: 40%;
+  top: 30%;
+  background: #ffc1ff;
+  filter: blur(90px);
+  border-radius: 50%;
 }
 
 header::after {
-    opacity: 90%;
-    z-index: -10;
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 300px;
-    transform: rotate(20deg);
-    left: 20%;
-    top: 20%;
-    background: #c1eeff;
-    filter: blur(90px);
-    border-radius: 20%;
+  opacity: 90%;
+  z-index: -10;
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  transform: rotate(20deg);
+  left: 20%;
+  top: 20%;
+  background: #c1eeff;
+  filter: blur(90px);
+  border-radius: 20%;
 }
 
 section::before {
-    opacity: 90%;
-    z-index: -10;
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 300px;
-    transform: rotate(30deg);
-    left: 20%;
-    top: 100%;
-    background: #ffc1ff;
-    filter: blur(90px);
-    border-radius: 100%;
+  opacity: 90%;
+  z-index: -10;
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  transform: rotate(30deg);
+  left: 20%;
+  top: 100%;
+  background: #ffc1ff;
+  filter: blur(90px);
+  border-radius: 100%;
 }
 section::after {
-    opacity: 90%;
-    z-index: -10;
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 800px;
-    transform: rotate(90deg);
-    left: -10%;
-    top: 80%;
-    background: #c1eeff;
-    filter: blur(90px);
-    border-radius: 100%;
+  opacity: 90%;
+  z-index: -10;
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 800px;
+  transform: rotate(90deg);
+  left: -10%;
+  top: 80%;
+  background: #c1eeff;
+  filter: blur(90px);
+  border-radius: 100%;
 }
 
 #menu-on {
-    animation: On;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
+  animation: On;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 #menu-off {
-    animation: Off;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
+  animation: Off;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 #text-on {
-    animation: textOn;
-    animation-duration: .8s;
-    animation-fill-mode: forwards;
+  animation: textOn;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
 }
 #text-off {
-    animation: textOff;
-    animation-duration: .4s;
-    animation-fill-mode: forwards;
+  animation: textOff;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
 }
 
 #name {
-    animation: sizeRightName;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  animation: sizeRightName;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 #title {
-    animation: sizeTitle;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  animation: sizeTitle;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes sizeTitle {
-    from {
-    }
-    to {
-    }
+  from {
+  }
+  to {
+  }
 }
 
 @keyframes sizeRightName {
-    from {
-        width: 0;
-    }
-    to {
-        width: 718px;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 718px;
+  }
 }
 
 @keyframes sizeRightNameM {
-    from {
-        width: 0;
-    }
-    to {
-        width: 270px;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 270px;
+  }
 }
 
 @keyframes On {
-    from {
-        transform: scale(1, 1);
-        width: 50px;
-    }
-    25% { transform: scale(0.8, 1); }
-    50% { transform: scale(1.2, 1); }
-    75% { transform: scale(0.9, 1); }
-    to {
-        transform: scale(1, 1);
-        width: 180px;
-    }
+  from {
+    transform: scale(1, 1);
+    width: 50px;
+  }
+  25% {
+    transform: scale(0.8, 1);
+  }
+  50% {
+    transform: scale(1.2, 1);
+  }
+  75% {
+    transform: scale(0.9, 1);
+  }
+  to {
+    transform: scale(1, 1);
+    width: 180px;
+  }
 }
 @keyframes Off {
-    from {
-        transform: scale(1, 1);
-        width: 180px;
-    }
-    25% { transform: scale(0.9, 1); }
-    50% { transform: scale(1.1, 1); }
-    75% { transform: scale(0.95, 1); }
-    to {
-        transform: scale(1, 1);
-        width: 50px;
-    }
+  from {
+    transform: scale(1, 1);
+    width: 180px;
+  }
+  25% {
+    transform: scale(0.9, 1);
+  }
+  50% {
+    transform: scale(1.1, 1);
+  }
+  75% {
+    transform: scale(0.95, 1);
+  }
+  to {
+    transform: scale(1, 1);
+    width: 50px;
+  }
 }
 @keyframes textOn {
-    from {
-        font-size: 0;
-        opacity: 0;
-    }
-    to {
-        font-size: 16px;
-        opacity: 1;
-    }
+  from {
+    font-size: 0;
+    opacity: 0;
+  }
+  to {
+    font-size: 16px;
+    opacity: 1;
+  }
 }
 @keyframes textOff {
-    from {
-        font-size: 16px;
-        opacity: 1;
-    }
-    to {
-        font-size: 0;
-        opacity: 0;
-    }
+  from {
+    font-size: 16px;
+    opacity: 1;
+  }
+  to {
+    font-size: 0;
+    opacity: 0;
+  }
 }
 
-
 @media (300px <= width <= 1000px) {
-    #title {
-        margin-left: 25px;
-        width: 500px;
-        font-size: 50px;
-    }
+  #title {
+    margin-left: 25px;
+    width: 500px;
+    font-size: 50px;
+  }
 
-    #name {
-        margin-left: 25px;
-        width: 500px;
-        font-size: 20px;
-        animation: sizeRightNameM;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-    }
+  #name {
+    margin-left: 25px;
+    width: 500px;
+    font-size: 20px;
+    animation: sizeRightNameM;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
 
-    #pfSection {
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 25px;
-    }
+  #pfSection {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25px;
+  }
 
-    #awards {
-        margin-left: -12px;
-        margin-top: 200px;
-    }
+  #awards {
+    margin-left: -12px;
+    margin-top: 200px;
+  }
 
-    #award1 {
-        margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    #awardIMG {
-        width: 330px;
-        height: 220px;
-    }
-    #awardTitle {
-        width: 320px;
-        font-size: 25px;
-    }
+  #award1 {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  #awardIMG {
+    width: 330px;
+    height: 220px;
+  }
+  #awardTitle {
+    width: 320px;
+    font-size: 25px;
+  }
 
-    #award2 {
-        margin-left: 25px;
-        display: flex;
-        flex-direction: column;
-    }
+  #award2 {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+  }
 }
